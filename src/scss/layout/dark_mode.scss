@@ -1,0 +1,24 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+
+.dark-mode{
+    transition: 1s;
+    background-color: rgb(25, 25, 25);
+    p,a,h1,h2,h3,h4,th,td{
+        color: $blanco;
+    }
+    .form{
+        .info_personal,.info_propiedad,.info_contactar{
+            border: solid 2px $blanco;
+        }
+        
+    }
+    input,textarea,select,label{
+        color: aliceblue;
+    }
+    input,textarea,select{
+        background-color: $grisOscuro;
+    }
+    
+}

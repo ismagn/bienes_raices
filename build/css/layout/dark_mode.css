@@ -1,0 +1,17 @@
+/** Media Queries **/
+.dark-mode {
+  transition: 1s;
+  background-color: rgb(25, 25, 25);
+}
+.dark-mode p, .dark-mode a, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode th, .dark-mode td {
+  color: #FFFFFF;
+}
+.dark-mode .form .info_personal, .dark-mode .form .info_propiedad, .dark-mode .form .info_contactar {
+  border: solid 2px #FFFFFF;
+}
+.dark-mode input, .dark-mode textarea, .dark-mode select, .dark-mode label {
+  color: aliceblue;
+}
+.dark-mode input, .dark-mode textarea, .dark-mode select {
+  background-color: #333333;
+}

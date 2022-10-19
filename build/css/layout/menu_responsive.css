@@ -1,0 +1,36 @@
+/** Media Queries **/
+.menu_responsive {
+  box-shadow: 10px 10px 30px #333333;
+  z-index: 50;
+  display: none;
+  position: fixed;
+  width: 90%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.menu_responsive .encabezado_menu {
+  background-color: #333333;
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-style: italic;
+}
+.menu_responsive .encabezado_menu p {
+  font-family: sans-serif;
+  font-size: x-large;
+}
+.menu_responsive nav a {
+  display: flex;
+  flex-direction: column;
+  line-height: 100px;
+  font-size: x-large;
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  font-weight: bolder;
+  text-align: center;
+}
+.menu_responsive nav a:active {
+  background-color: rgb(214, 214, 214);
+  transition: 1s;
+}

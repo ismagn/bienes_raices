@@ -1,0 +1,405 @@
+/** Media Queries **/
+.seccion1 .titulo {
+  margin: 30px 0 30px 0;
+  text-align: center;
+  font-weight: bold;
+}
+.seccion1 .cards_nosotros {
+  text-align: center;
+}
+.seccion1 .cards_nosotros img {
+  height: 100px;
+}
+.seccion1 .cards_nosotros h3 {
+  margin: 20px 0 20px 0;
+}
+.seccion1 .grid_nosotros {
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .seccion1 .grid_nosotros {
+    max-width: 85%;
+  }
+}
+@media (min-width: 768px) {
+  .seccion1 .grid_nosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.seccion2 .grid-sec2 {
+  margin: 0 10px 0 10px;
+}
+@media (min-width: 768px) {
+  .seccion2 .grid-sec2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 98%;
+  }
+}
+@media (min-width: 1024px) {
+  .seccion2 .grid-sec2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+}
+.seccion2 .grid-sec2 .cards_sec2 {
+  padding-bottom: 20px;
+  margin-top: 30px;
+  background-color: #333333;
+}
+.seccion2 .titulo2 {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+.seccion2 .img-card img {
+  width: 100%;
+}
+.seccion2 .descripcion_card {
+  color: #FFFFFF;
+  margin: 10px;
+}
+.seccion2 .descripcion_card .precio_card {
+  color: #71B100;
+}
+.seccion2 .descripcion_card .iconos {
+  display: flex;
+  justify-content: space-between;
+}
+.seccion2 .descripcion_card .iconos img {
+  filter: invert(100%);
+  margin: 0 auto;
+}
+.seccion2 .descripcion_card .iconos label {
+  color: #FFFFFF;
+  font-size: x-large;
+  margin-right: 10%;
+}
+.seccion2 .descripcion_card .btn_card {
+  margin: 20px auto;
+}
+.seccion2 .descripcion_card .btn_card a {
+  background-color: #E08709;
+  width: 100%;
+  display: block;
+}
+.seccion2 .btn_ver_todas {
+  padding: 10px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .seccion2 .btn_ver_todas {
+    text-align: end;
+    padding: 30px;
+  }
+}
+.seccion2 .btn_ver_todas a {
+  background-color: #71B100;
+  width: 150px;
+}
+
+.seccion3 {
+  margin-top: 30px;
+  background-image: url(../../../build/img/encuentra.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+.seccion3 .cont_encuentra {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 100px;
+}
+.seccion3 .cont_encuentra h1 {
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.seccion3 .cont_encuentra p {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.seccion3 .cont_encuentra a {
+  background-color: #E08709;
+}
+.seccion3 .cont_encuentra a:hover {
+  background-color: #71B100;
+}
+
+@media (min-width: 1024px) {
+  .seccion4 {
+    display: grid;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.seccion4 a {
+  text-decoration: none;
+}
+.seccion4 a :hover {
+  color: #71B100;
+}
+.seccion4 .nuestro_blog .articulo a {
+  color: black;
+}
+@media (min-width: 768px) {
+  .seccion4 .nuestro_blog .articulo a {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+  }
+}
+.seccion4 .nuestro_blog .articulo a img {
+  width: 100%;
+}
+.seccion4 .nuestro_blog .articulo a .descripcion_articulo {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.seccion4 .nuestro_blog .articulo a .descripcion_articulo .linea {
+  height: 5px;
+  background-color: #71B100;
+  width: 150px;
+  margin-bottom: 35px;
+}
+.seccion4 .nuestro_blog .articulo a .descripcion_articulo span {
+  color: #E08709;
+}
+.seccion4 .contenedor_articulos {
+  margin: 5px;
+}
+@media (min-width: 768px) {
+  .seccion4 .contenedor_articulos {
+    margin: 20px;
+  }
+}
+.seccion4 .testimoniales .testimonio {
+  font-weight: bold;
+  margin: 20px;
+  border-radius: 5%;
+  height: 70%;
+  background-color: #71B100;
+  padding: 80px 80px 30px 80px;
+}
+.seccion4 .testimoniales .testimonio blockquote img {
+  height: 40px;
+}
+
+.footer {
+  background-color: #333333;
+  padding-top: 10px;
+  height: 150px;
+  border-top: solid 10px #000000;
+}
+.footer .navegacion_footer nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .footer .navegacion_footer nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+}
+@media (min-width: 1024px) {
+  .footer .navegacion_footer nav {
+    margin: 30px 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer .navegacion_footer nav a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/************************nosotroa**********************************/
+.descripcion_nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.descripcion_nosotros h4 {
+  text-align: center;
+  padding-top: 15px;
+}
+.descripcion_nosotros p {
+  font-size: large;
+}
+
+.img_nosotros img {
+  width: 100%;
+}
+
+/*********************************blog********************/
+@media (min-width: 1024px) {
+  .blog {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+.blog a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 768px) {
+  .blog .nuestro_blog .articulo a {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+  }
+}
+.blog .nuestro_blog .articulo a img {
+  width: 100%;
+}
+.blog .nuestro_blog .articulo a .descripcion_articulo {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog .nuestro_blog .articulo a .descripcion_articulo p {
+  font-size: larger;
+}
+.blog .nuestro_blog .articulo a .descripcion_articulo .linea {
+  position: absolute;
+  height: 2px;
+  background-color: #71B100;
+  width: 350px;
+  margin-top: 30px;
+}
+.blog .nuestro_blog .articulo a .descripcion_articulo span {
+  color: #71B100;
+}
+.blog .contenedor_articulos {
+  margin: 5px;
+}
+@media (min-width: 768px) {
+  .blog .contenedor_articulos {
+    margin: 20px;
+  }
+}
+
+/************contacto************************/
+.cont_contacto {
+  margin-top: 20px;
+}
+.cont_contacto .img_contacto {
+  margin: 30px;
+}
+.cont_contacto .img_contacto img {
+  width: 100%;
+}
+
+.titulos_formularios {
+  text-align: center;
+  font-style: italic;
+}
+.titulos_formularios h3 {
+  font-weight: lighter;
+}
+
+input {
+  height: 50px;
+}
+
+.cont_formulario .form {
+  padding-top: 50px;
+}
+.cont_formulario .form .info_personal {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .cont_formulario .form .info_personal {
+    width: 85%;
+    border: solid 2px #000000;
+  }
+}
+.cont_formulario .form .info_personal .input {
+  width: 95%;
+  margin: 0 auto;
+}
+.cont_formulario .form .info_personal .input label {
+  font-size: x-large;
+  font-weight: bold;
+}
+.cont_formulario .form .info_personal .input textarea {
+  resize: none;
+}
+.cont_formulario .form .info_propiedad {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .cont_formulario .form .info_propiedad {
+    width: 85%;
+    border: solid 2px #000000;
+  }
+}
+.cont_formulario .form .info_propiedad .input {
+  width: 95%;
+  margin: 0 auto;
+}
+.cont_formulario .form .info_propiedad .input label {
+  font-size: x-large;
+  font-weight: bold;
+}
+.cont_formulario .form .info_propiedad .input select {
+  height: 50px;
+}
+.cont_formulario .form .info_contactar {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .cont_formulario .form .info_contactar {
+    width: 85%;
+    border: solid 2px #000000;
+  }
+}
+.cont_formulario .form .info_contactar .input {
+  font-size: x-large;
+  width: 95%;
+  margin: 0 auto;
+}
+.cont_formulario .form .info_contactar .input .telefono_email {
+  display: block;
+}
+@media (min-width: 768px) {
+  .cont_formulario .form .info_contactar .input .telefono_email {
+    display: flex;
+  }
+}
+.cont_formulario .form .enviar {
+  margin: 50px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .cont_formulario .form .enviar {
+    text-align: center;
+  }
+}
+.cont_formulario .form .enviar input {
+  background-color: #71B100;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .cont_formulario .form .enviar input {
+    width: 20%;
+  }
+}

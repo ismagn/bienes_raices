@@ -1,0 +1,14 @@
+@import 'base/normalize';
+@import 'base/mixins';
+@import 'layout/header';
+@import 'base/variables';
+@import 'layout/main.scss';
+@import 'layout/menu_responsive.scss';
+@import 'layout/dark_mode.scss';
+@import 'layout/admin.scss';
+
+
+body{
+    transition: 0s;
+}
+

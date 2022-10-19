@@ -1,0 +1,45 @@
+
+@import '../base/mixins';
+@import '../base/variables';
+
+
+
+.menu_responsive{
+    box-shadow: 10px 10px 30px  $grisOscuro;
+    z-index: 50;
+    display: none;
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255,255,255);
+    .encabezado_menu{
+            background-color: $grisOscuro;
+            padding: 20px;
+            text-align: center;
+            color: $blanco;
+            font-weight: bolder;
+            font-style: italic;
+            p{
+                font-family:sans-serif;
+                font-size: x-large;
+            }
+            
+    }
+    nav{
+        a{
+            display: flex;
+            flex-direction: column;
+            line-height: 100px;
+            font-size: x-large;
+            text-decoration: none;
+            color: rgb(102, 102, 102);
+            font-weight: bolder;
+            text-align: center;
+        }
+        a:active{
+            background-color: rgb(214, 214, 214);
+            transition: 1s;
+
+        }
+    }
+}

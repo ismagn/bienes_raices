@@ -1,0 +1,21 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+
+
+
+.lista_propiedades{
+    margin: 50px;
+    thead{
+        background-color:$verde;
+    }
+    
+    tbody{
+        font-weight: bolder;
+    }
+
+    img{
+            width: 150px;
+    }
+    
+}

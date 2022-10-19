@@ -1,0 +1,424 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+
+.seccion1{
+    
+    .titulo{
+        margin: 30px 0 30px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    .cards_nosotros{
+        text-align: center;
+        img{
+            height: 100px;
+        }
+        h3{
+            margin: 20px 0 20px 0;
+    }
+    }
+    .grid_nosotros{
+        margin: 0 auto;
+        @include desktop{
+            max-width: 85%;
+        }
+
+    @include tablet{
+        @include grid(3,20px);
+        }
+    }
+    
+}
+
+.seccion2{
+    .grid-sec2{
+        
+        margin: 0 10px 0 10px;
+        @include tablet{
+            @include grid(3,10px);
+            margin: 0 auto;
+            max-width: 98%;
+        }
+        @include desktop{
+            @include grid(3,10px);
+            margin: 0 auto;
+            max-width: 95%;
+        }
+        .cards_sec2{
+            padding-bottom: 20px;
+            margin-top: 30px;
+            background-color: $grisOscuro;
+        }
+
+    }
+    .titulo2{
+        text-align: center;
+        margin: 30px 0 30px 0;
+    }
+    .img-card{
+        img{
+            width: 100%;
+        }
+    }
+
+    .descripcion_card{
+        color: $blanco;
+        margin: 10px;
+        .precio_card{
+        color: $verde;
+        }
+        .iconos{
+            display: flex;
+            justify-content: space-between;
+            img{
+                filter: invert(100%);
+                margin: 0 auto;
+            }
+            label{
+                color: $blanco;
+                font-size: x-large;
+                margin-right: 10%;
+            }
+        }
+        .btn_card{
+            margin: 20px auto;
+            a{
+                background-color: $amarillo;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .btn_ver_todas{
+        padding: 10px;
+        text-align: center;
+        @include desktop{
+            text-align: end;
+            padding: 30px;
+        }
+
+        a{
+            background-color: $verde;
+            width: 150px;
+        }
+    }
+}
+
+
+.seccion3{
+    margin-top: 30px;
+    background-image: url(../../../build/img/encuentra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    
+    .cont_encuentra{
+        text-align: center;
+        color: $blanco;
+        padding-top: 100px;
+        h1{
+            font-weight: bold;
+            padding-bottom: 30px;
+        }
+        p{
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        a{
+            background-color: $amarillo;
+        }
+        a:hover{
+            background-color: $verde;
+        }
+    }
+}
+
+
+.seccion4{
+    @include desktop{
+    display: grid;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
+    }
+        a{
+            text-decoration: none;
+            
+        }
+        a :hover{
+            color: $verde;
+        }
+        .nuestro_blog{
+            .articulo{
+                a{
+                    color: black;
+                    @include tablet{
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    grid-gap: 20px;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                    .descripcion_articulo{
+                        margin-top: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .linea{
+                            height: 5px;
+                            background-color: $verde;
+                            width: 150px;
+                            margin-bottom: 35px;
+                        }
+                        span{
+                            color: $amarillo;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .contenedor_articulos{
+            margin: 5px;
+            @include tablet{
+            margin: 20px;
+            }
+        }
+
+        .testimoniales{
+            .testimonio{
+                font-weight:bold;
+                margin: 20px;
+                border-radius: 5%;
+                height: 70%;
+                background-color: $verde;
+                padding: 80px 80px 30px 80px;
+                blockquote{
+                        img{
+                            height: 40px;
+                        }
+                }
+            }
+        }
+    }
+
+    .footer{
+        background-color: $grisOscuro;
+        padding-top: 10px;
+        height: 150px;
+        border-top: solid 10px $negro;
+        
+        .navegacion_footer{
+            nav{
+                display: none;
+                @include tablet{
+                display: flex;
+                justify-content: space-between;
+                margin: 30px auto;
+                }
+                @include desktop{
+                margin: 30px 70%;
+                display: flex;
+                justify-content: space-between;
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: $blanco;
+                    font-weight: bold;
+                    
+                }
+            }
+            
+        }
+    }
+
+
+/************************nosotroa**********************************/
+
+.descripcion_nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4{
+        text-align: center;
+        padding-top: 15px;
+    }
+    p{
+        font-size: large;
+    }
+}
+.img_nosotros{
+    img{
+        width: 100%;
+    }
+}
+
+/*********************************blog********************/
+
+.blog{
+    @include desktop{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .nuestro_blog{
+                .articulo{
+                    a{
+                        
+                        @include tablet{
+                        display: grid;
+                        grid-template-columns: 1fr 2fr;
+                        grid-gap: 20px;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                        .descripcion_articulo{
+                            margin-top: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            p{
+                                font-size: larger; 
+                                
+                            }
+                            .linea{
+                                position: absolute;
+                                height: 2px;
+                                background-color: $verde;
+                                width: 350px;
+                                margin-top: 30px;
+                            }
+                            span{
+                                color: $verde;
+                            }
+                        }
+                    }
+                }
+            }
+            .contenedor_articulos{
+                margin: 5px;
+                @include tablet{
+                margin: 20px;
+                }
+            }
+}
+
+/************contacto************************/
+
+.cont_contacto{
+    margin-top: 20px;
+    .img_contacto{
+        margin: 30px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.titulos_formularios{
+    text-align: center;
+    font-style: italic;
+    h3{
+        font-weight: lighter;
+    }
+
+}
+
+input{
+    height: 50px;
+}
+
+.cont_formulario{
+    .form{
+        padding-top: 50px;
+        .info_personal{
+            width: 95%;
+            margin: 0 auto;
+            @include tablet{
+                width: 85%;
+                border: solid 2px $negro;
+            }
+            .input{
+                width: 95%;
+                margin: 0 auto;
+                label{
+                    font-size: x-large;
+                    font-weight: bold;
+                }
+                
+                textarea{
+                    resize: none;
+                }
+            }
+        }
+
+        .info_propiedad{
+            width: 95%;
+            margin: 0 auto;
+            @include tablet{
+                width: 85%;
+                border: solid 2px $negro;
+            }
+            .input{
+                width: 95%;
+                margin: 0 auto;
+                label{
+                    font-size: x-large;
+                    font-weight: bold;
+                }
+                select{
+                    height: 50px;
+                }
+            }
+            
+        }
+
+        .info_contactar{
+            width: 95%;
+            margin: 0 auto;
+            @include tablet{
+                width: 85%;
+                border: solid 2px $negro;
+            }
+            .input{
+                font-size: x-large;
+                width: 95%;
+                margin: 0 auto;
+                .telefono_email{
+                    display: block;
+                    @include tablet{
+                        display: flex;
+                    }
+                    
+                }
+            }
+            
+        }
+        .enviar{
+            margin: 50px 0;
+            text-align: center;
+            @include tablet{
+                text-align: center;
+            }
+            input{
+                background-color: $verde;
+                width: 90%;
+                @include tablet{
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+
+

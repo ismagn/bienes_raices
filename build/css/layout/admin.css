@@ -1,0 +1,13 @@
+/** Media Queries **/
+.lista_propiedades {
+  margin: 50px;
+}
+.lista_propiedades thead {
+  background-color: #71B100;
+}
+.lista_propiedades tbody {
+  font-weight: bolder;
+}
+.lista_propiedades img {
+  width: 150px;
+}

@@ -1,0 +1,12 @@
+.header-inicio {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.barra_navegacion nav {
+  display: flex;
+  align-items: center;
+}

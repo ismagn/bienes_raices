@@ -1,0 +1,137 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+
+.header-inicio{
+    background-image: url(../../../build/img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include telefono{
+        height: 300px;
+    }
+    @include tablet{
+    height: 500px;
+    }
+    @include desktop{
+        height: 600px;
+        }
+}
+
+.logo-nav{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    @include desktop{
+    align-items: center;
+    justify-content: space-between;
+    }
+}
+
+.logo{
+    text-align:start;
+    img{
+        @include telefono{
+            height: 30px;
+        }
+        @include tablet{
+            height: 50px;
+        }
+        @include desktop{
+            height: 60px;
+        }
+    }
+}
+
+.icon_menu{
+    z-index: 99;
+    cursor: pointer;
+    font-size: x-large;
+    filter: invert(100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 50%;
+    @include desktop{
+        display: none;
+    }
+}
+
+.icon_dark{
+    display: flex;
+    justify-content: flex-end;
+    img{
+        cursor: pointer;
+        height: 30px;
+        filter: invert(100%);
+    }
+}
+
+.barra_navegacion{
+    nav{
+        @include telefono{
+            display: none;
+        }
+        @include desktop{
+        display: flex;
+        align-items: center;
+        }
+
+        a{
+            font-size: large;
+            font-weight: bold;
+            color: $blanco;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(248, 228, 153);
+            transition: 1s;
+        }
+    }  
+}
+
+.descripcion_header{
+    p{
+        font-style: italic;
+        font-weight: bold;
+        color: $blanco;
+        
+    }
+    @include telefono{
+        text-align: center;
+        padding: 10px;
+        margin-top: 10%;
+        font-size: large;
+    }
+
+    @include tablet{
+        text-align: start;
+        margin-top: 20%;
+        margin-left: 5%;
+        font-size: xx-large;
+    }
+    @include desktop{
+        text-align: start;
+        margin-top: 15%;
+        margin-left: 5%;
+        font-size: xxx-large;
+    }
+    
+    
+}
+
+/*****************************menus************************/
+
+
+.header-menus{
+    background-color: $grisOscuro;
+    @include telefono{
+        height: 70px;
+    }
+    @include tablet{
+    height: 130px;
+    }
+    @include desktop{
+        height: 200px;
+        }
+}
