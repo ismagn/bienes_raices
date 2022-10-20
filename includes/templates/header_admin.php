@@ -26,7 +26,7 @@
                         <img id="dark" src="/build/img/dark-mode.svg" alt="">
                     </div>
                     <div class="col-12 mt-3">
-                        <nav class="nav justify-content-between">
+                        <nav class="nav d-none justify-content-between">
                         <a href="nosotros.php">Nosotros</a>
                         <a href="anuncios.php">Anuncios</a>
                         <a href="blog.php">Blog</a>

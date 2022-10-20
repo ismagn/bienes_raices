@@ -35,12 +35,12 @@ if ($res) {
 
     <form action="" method="POST" class="">
         <div class="row d-flex justify-content-center py-5  m-auto rounded-4 ">
-        <h3 class=" fw-bold  col-6 text-center text-danger" for="">Seguro que desea borrar la propiedad: <br> <span class="text-white fw-bold fs-2"><?php echo $id . ".- " . $nombre ?></span> </h3>
+        <h3 class=" fw-bold  col-12 text-center text-danger" for="">Seguro que desea borrar la propiedad: <br> <span class="text-white fw-bold fs-2"><?php echo $id . ".- " . $nombre ?></span> </h3>
         </div>
         
         <div class="row text-center d-flex justify-content-center">
-            <input class="btn bg-danger fw-bold col-2 ms-1" type="submit" value="CONFIRMAR">
-            <a href="../index.php" class="ms-1 btn bg-primary fw-bold col-2 pt-2">CANCELAR</a>
+            <input class="btn bg-danger fw-bold col-10 my-1 col-md-2 ms-1" type="submit" value="CONFIRMAR">
+            <a href="../index.php" class="ms-1 btn bg-primary fw-bold col-10 my-1 col-md-2 pt-2">CANCELAR</a>
         </div>
         
     </form>

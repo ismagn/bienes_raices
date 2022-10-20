@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
     $imagen=$_FILES['imagen'];
 
 //evaluando si el usuario agrego los datos en el formulario
-    if (!$titulo | !$precio | !$descripcion | !$habitacion | !$baños | !$estacionamiento ) {
+    if (!$titulo | !$precio | !$descripcion | !$habitacion | !$baños ) {
         $error = "*faltan campos por llenar*";
     }elseif(!$imagen['name']){
         $error = "*falta agregar una imagen*";
@@ -35,7 +35,6 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
         mkdir($carpetaImagenes);
     }
 
-   
 
     //creado id unico para la imagen y moviendola a la carpeta imagenes
     $nombreImagen=md5(uniqid(rand(),true)) . ".jpg";
@@ -45,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
 //agregando datos a la base de datos
     $query="INSERT INTO propiedades(titulo,precio,imagen,descripcion,habitaciones,WC,estacionamiento,creado,vendedores_id) VALUES ('$titulo','$precio','$nombreImagen','$descripcion','$habitacion','$baños','$estacionamiento', '$creado', '$vendedorId')";
     
+
 
     $res=mysqli_query($db,$query);
 

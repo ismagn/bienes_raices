@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
     
 
 //evaluando si el usuario agrego los datos en el formulario
-    if (!$titulo | !$precio | !$descripcion | !$habitacion | !$baños | !$estacionamiento ) {
+    if (!$titulo | !$precio | !$descripcion | !$habitacion | !$baños  ) {
         $error = "*faltan campos por llenar*";
     }else{
 
@@ -101,15 +101,17 @@ include '../../includes/templates/header_admin.php';
 
 
 <main>
-    <h1 class="text-center" >Actualizar</h1>
-
-    <a href="../index.php" class="btn btn-primary ms-5">Regresar</a>
+    <h1 class="text-center" >Actualizar Propiedad</h1>
+    <div class="row d-flex justify-content-center mt-5">
+        <a href="../index.php" class="btn btn-primary col-4">Regresar</a>
+    </div>
+    
 
     <div class=" mt-2 mx-auto fs-5 fw-bold w-25 text-center text-danger"><?php echo $error ?></div>
 
     <section class="cont_formulario ">
             <form action="" method="POST" class="form" enctype="multipart/form-data">
-                <div class="info_personal mt-5 pt-2">
+                <div class="info_personal mt-3 pt-2">
                     <div class=" titulos_formularios text-muted">
                         <h3 >INFORMACION GENERAL</h3>
                         </div>

@@ -2,7 +2,18 @@
 @import '../base/variables';
 
 
-
+.main_admin{
+    p,a,h1,h2,h3,h4,th,td{
+        font-size: small;
+        @include tablet{
+            font-size: medium;
+        }
+        
+        @include desktop{
+            font-size: large;
+        }
+    }
+}
 
 .lista_propiedades{
     margin: 50px;

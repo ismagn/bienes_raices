@@ -3,18 +3,18 @@
 
 
 .header-inicio{
-    background-image: url(../../../build/img/header.jpg);
+    background-image: url(../../../build/img/header_new.jpg);
     background-size: cover;
-    background-position: center;
+    background-position:bottom;
     background-repeat: no-repeat;
     @include telefono{
-        height: 300px;
+        height: 250px;
     }
     @include tablet{
     height: 500px;
     }
     @include desktop{
-        height: 600px;
+        height: 700px;
         }
 }
 
@@ -84,8 +84,8 @@
             text-decoration: none;
         }
         a:hover{
-            color: rgb(248, 228, 153);
-            transition: 1s;
+            color: rgb(255, 207, 75);
+            transition: 0.5s;
         }
     }  
 }

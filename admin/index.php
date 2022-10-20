@@ -14,8 +14,8 @@ $sql="SELECT * FROM propiedades;";
 $consulta=mysqli_query($db,$sql);
 ?>
 
-<main>
-    <h1 class="text-center">Administrador de Bienes Raices</h1>
+<main class="main_admin">
+    <h1 class="text-center fs-1 fw-bold">Administrador de Bienes Raices</h1>
 
     <!--muestra un mensaje temporal -->
     <?php if ($mensaje == 1) { ?>
@@ -40,7 +40,7 @@ $consulta=mysqli_query($db,$sql);
     <a href="/admin/propiedades/crear.php" class="btn btn-primary">Nueva Propiedad</a>
     </div>
     
-    <div class="lista_propiedades">
+    <div class="lista_propiedades table-responsive">
     <table class="table table-bordered text-center table align-middle">
         <thead>
             <tr>
@@ -61,8 +61,8 @@ $consulta=mysqli_query($db,$sql);
                 <td><?php echo $row['precio'] ?></td>
                 <td>
                     <div class="d-flex flex-column align-items-center ">
-                    <a href="/admin/propiedades/actualizar.php?id=<?php echo $row['id'];?>" class=" mb-2 btn btn-success  col-6">Actualizar Propiedad</a>
-                    <a href="/admin/propiedades/borrar.php?id=<?php echo $row['id'];?>" class="btn btn-danger  col-6">Eliminar Propiedad</a>
+                    <a href="/admin/propiedades/actualizar.php?id=<?php echo $row['id'];?>" class=" mb-2 btn btn-success btn-sm col-sm-8 col-lg-6">Actualizar Propiedad</a>
+                    <a href="/admin/propiedades/borrar.php?id=<?php echo $row['id'];?>" class="btn btn-danger  col-sm-8 col-lg-6">Eliminar Propiedad</a>
                     </div>
                 </td>
             </tr>
