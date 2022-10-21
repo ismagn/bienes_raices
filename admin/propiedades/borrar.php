@@ -1,7 +1,15 @@
 <?php 
 require '../../includes/database.php';
 $db=conexionDB ();
+?>
+<?php include '../../includes/funciones.php';
+$auth=autenticado();
+if (!$auth) {
+    header('location: /');
+}
+?>
 
+<?php
 
 $id=$_GET['id'];
 $sql="SELECT * FROM propiedades WHERE id= ${id}";

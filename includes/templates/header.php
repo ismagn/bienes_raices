@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$auth=$_SESSION['login'];
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +28,12 @@
                 <a href="anuncios.php">Anuncios</a>
                 <a href="blog.php">Blog</a>
                 <a href="contacto.php">Contacto</a>
+                <?php if (!$auth) { ?>
+                            <a href="login.php">Iniciar Sesion</a>
+                        <?php } ?>    
+                        <?php if ($auth) { ?>
+                            <a href="cerrar_sesion.php">Cerrar Sesion</a>
+                        <?php } ?>
             </nav>
         </div>
     </section>
@@ -31,11 +41,11 @@
 <!---------------------------------------------------------------------->
     <header class="header-menus container-fluid">
         <div class="logo-nav row">
-            <div class="logo col-4 col-md-8 ">
-                <a href="index.php"><img src="/build/img/logo.svg" alt=""></a>
+            <div class="logo col-4 col-md-8 col-lg-6 ">
+                <a href="/"><img src="/build/img/logo.svg" alt=""></a>
             </div>
             
-            <div class="barra_navegacion col-8 col-md-4">
+            <div class="barra_navegacion col-8 col-md-4 col-lg-6">
                 <div class="row">
                     <div class="icon_dark col-10 col-lg-12 ">
                         <img id="dark" src="/build/img/dark-mode.svg" alt="">
@@ -49,6 +59,12 @@
                         <a href="anuncios.php">Anuncios</a>
                         <a href="blog.php">Blog</a>
                         <a href="contacto.php">Contacto</a>
+                        <?php if (!$auth) { ?>
+                            <a href="login.php">Iniciar Sesion</a>
+                        <?php } ?> 
+                        <?php if ($auth) { ?>
+                            <a href="cerrar_sesion.php">Cerrar Sesion</a>
+                        <?php } ?>
                         </nav>
                     </div>
                 </div>

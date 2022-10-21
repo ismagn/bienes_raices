@@ -1,10 +1,16 @@
 
 <?php include '../includes/templates/header_admin.php'  ?>
-
+<?php include '../includes/funciones.php';
+$auth=autenticado();
+if (!$auth) {
+    header('location: /');
+}
+?>
 <!--variable que almacena el valor de la url para mostrar mensaje temporal -->
 <?php   $mensaje=$_GET['msj']  ?>
 
 <?php
+
 //conexion base de datos
 require '../includes/database.php';
 $db=conexionDB ();

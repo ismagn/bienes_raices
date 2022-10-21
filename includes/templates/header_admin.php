@@ -17,7 +17,7 @@
     <header class="header-menus container-fluid">
         <div class="logo-nav row">
             <div class="logo col-4 col-md-8 ">
-                <a href="index.php"><img src="/build/img/logo.svg" alt=""></a>
+                <a href="/"><img src="/build/img/logo.svg" alt=""></a>
             </div>
             
             <div class="barra_navegacion col-8 col-md-4">

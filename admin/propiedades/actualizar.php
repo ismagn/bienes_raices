@@ -1,8 +1,16 @@
 <?php 
 require '../../includes/database.php';
 $db=conexionDB ();
+?>
 
+<?php include '../../includes/funciones.php';
+$auth=autenticado();
+if (!$auth) {
+    header('location: /');
+}
+?>
 
+<?php
 $id=$_GET['id'];
 //obtenemos los datos de la propiedad
 $sql="SELECT * FROM propiedades WHERE id= ${id}";
